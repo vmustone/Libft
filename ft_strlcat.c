@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vmustone <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vmustone <vmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 13:58:22 by vmustone          #+#    #+#             */
-/*   Updated: 2022/11/10 18:06:57 by vmustone         ###   ########.fr       */
+/*   Updated: 2023/11/02 08:07:34 by vmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (dst && dstsize < ft_strlen(dst))
 		return (dstsize + ft_strlen(src));
 	while (dst && *dst != '\0' && dstsize > i)
-	{	
+	{
 		dst++;
 		i++;
 	}

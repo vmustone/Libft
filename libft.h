@@ -6,7 +6,7 @@
 /*   By: vmustone <vmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 18:45:40 by vmustone          #+#    #+#             */
-/*   Updated: 2023/05/10 14:20:18 by vmustone         ###   ########.fr       */
+/*   Updated: 2023/11/02 08:05:53 by vmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
+# include <limits.h>
+
+# define BUFFER_SIZE 42
 
 typedef struct s_list
 {
@@ -77,4 +80,5 @@ int				ft_putchar_val(char c);
 int				ft_putnbr_val(int n);
 int				ft_putstr_val(char *s);
 int				ft_printf(const char *src, ...);
+char			*get_next_line(int fd);
 #endif

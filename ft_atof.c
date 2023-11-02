@@ -6,7 +6,7 @@
 /*   By: vmustone <vmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 18:41:17 by vmustone          #+#    #+#             */
-/*   Updated: 2023/03/02 18:49:37 by vmustone         ###   ########.fr       */
+/*   Updated: 2023/11/02 08:06:53 by vmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ double	calculation(int count, double r, double negative, char *str)
 	}
 	if (str[i++] == '.')
 		while (str[i] >= '0' && str[i] <= '9')
-				r += ((double)str[i++] - '0') / decimal(count++);
+			r += ((double)str[i++] - '0') / decimal(count++);
 	return (r * (double)negative);
 }
 
